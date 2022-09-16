@@ -1,0 +1,6 @@
+---
+include:
+  - board: nice_nano_v2_flipped
+    shield: tdh70_left
+  - board: nice_nano_v2_flipped
+    shield: tdh70_right
