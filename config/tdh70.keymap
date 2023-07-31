@@ -30,11 +30,11 @@
 #define MODL RALT L
 #define MODSEMI RGUI SEMI
 #define MODM RGUI M // AZERTY
-#define COPY LC(C)
-#define PASTE LC(V)
-#define CUT LC(X)
-#define UNDO LC(Z)
-#define REDO LC(Y)
+#define U_COPY LC(C)
+#define U_PASTE LC(V)
+#define U_CUT LC(X)
+#define U_UNDO LC(Z)
+#define U_REDO LC(Y)
 
 / {
     behaviors {
@@ -103,7 +103,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼──────────────┼─────────────┤                                                           ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼──────────────┤
     XXX           XXX           &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT     XXX                                                                       &kp CAPS      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     XXX           XXX
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼──────────────┼─────────────┼─────────────┬─────────────╮   ╭────────────┼──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼──────────────┤
-    XXX           XXX           &kp UNDO      &kp CUT       &kp COPY      &kp PASTE      &kp REDO      XXX           XXX               XXX           XXX           &kp INS       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       XXX           XXX
+    XXX           XXX           &kp U_UNDO    &kp U_CUT     &kp U_COPY    &kp U_PASTE    &kp U_REDO    XXX           XXX               XXX           XXX           &kp INS       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       XXX           XXX
 // ╰─────────────┴─────────────┴─────────────┴─────────────┼─────────────┼──────────────┼─────────────┼─────────────┼─────────────┤   ├────────────┴──────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼──────────────╯
                                                             XXX           XXX            XXX           XXX           XXX               ___          ___            ___           XXX           XXX
 //                                                         ╰─────────────┴──────────────┴─────────────┴─────────────┴─────────────╯   ╰────────────┴──────────────┴─────────────┴─────────────┴─────────────╯
