@@ -86,9 +86,6 @@ jobs:
       - name: West Init
         run: west init -l "${{ inputs.config_path }}"
 
-      - name: West Update
-        run: west update
-
       - name: West Zephyr export
         run: west zephyr-export
 
