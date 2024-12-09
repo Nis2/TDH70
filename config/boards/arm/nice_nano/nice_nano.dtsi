@@ -5,6 +5,7 @@
  */
 
 #include <nordic/nrf52840_qiaa.dtsi>
+#include "nice_nano-pinctrl.dtsi"
 #include "arduino_pro_micro_pins.dtsi"
 
 / {
@@ -21,7 +22,6 @@
 		compatible = "gpio-leds";
 		blue_led: led_0 {
 			gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
-			label = "Blue LED";
 		};
 	};
 };
@@ -43,19 +43,29 @@
 };
 
 &i2c0 {
-	compatible = "nordic,nrf-twi";
-	sda-pin = <17>;
-	scl-pin = <20>;
+    compatible = "nordic,nrf-twi";
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-1 = <&i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
+};
+
+&spi1 {
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi1_default>;
+    pinctrl-1 = <&spi1_sleep>;
+    pinctrl-names = "default", "sleep";
 };
 
 &uart0 {
-	compatible = "nordic,nrf-uarte";
-	tx-pin = <6>;
-	rx-pin = <8>;
+    compatible = "nordic,nrf-uarte";
+    current-speed = <115200>;
+    pinctrl-0 = <&uart0_default>;
+    pinctrl-1 = <&uart0_sleep>;
+    pinctrl-names = "default", "sleep";
 };
 
-&usbd {
-	status = "okay";
+zephyr_udc0: &usbd {
+    status = "okay";
 };
 
 
@@ -70,11 +80,9 @@
 		#size-cells = <1>;
 
 		sd_partition: partition@0 {
-			label = "softdevice";
 			reg = <0x00000000 0x00026000>;
 		};
 		code_partition: partition@26000 {
-			label = "code_partition";
 			reg = <0x00026000 0x000c6000>;
 		};
 
@@ -88,12 +96,10 @@
 		 * if enabled.
 		 */
 		storage_partition: partition@ec000 {
-			label = "storage";
 			reg = <0x000ec000 0x00008000>;
 		};
 
 		boot_partition: partition@f4000 {
-			label = "adafruit_boot";
 			reg = <0x000f4000 0x0000c000>;
 		};
 	};
