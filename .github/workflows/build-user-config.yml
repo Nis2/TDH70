@@ -86,9 +86,6 @@ jobs:
       - name: West Init
         run: west init -l "${{ inputs.config_path }}"
 
-      - name: West Zephyr export
-        run: west zephyr-export
-
       - name: West Build (${{ env.display_name }})
         shell: sh -x {0}
         run: west build -s zmk/app -b "${{ matrix.board }}" -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/${{ inputs.config_path }}" ${{ env.extra_cmake_args }} ${{ matrix.cmake-args }}
