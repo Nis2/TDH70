@@ -1,7 +1,5 @@
-# Copyright (c) 2020 Ryan Cross
-# SPDX-License-Identifier: MIT
 
-if SHIELD_DONGLE
+if SHIELD_TDH70_DONGLE
 
 config ZMK_KEYBOARD_NAME
 	default "TDH70 Dongle"
@@ -15,7 +13,7 @@ config ZMK_USB
 endif
 
 
-if SHIELD_DONGLE || SHIELD_TDH70_LEFT || SHIELD_TDH70_RIGHT
+if SHIELD_TDH70_DONGLE || SHIELD_TDH70_LEFT || SHIELD_TDH70_RIGHT
 
 config ZMK_SPLIT
 	default y
