@@ -6,3 +6,7 @@ include:
     shield: tdh70_right
   - board: nice_nano_v2_flipped
     shield: settings_reset
+  - board: seeeduino_xiao_ble
+    shield: dongle
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
