@@ -2,7 +2,9 @@
 include:
   - board: nice_nano_v2_flipped
     shield: tdh70_left
+    snippet: studio-rpc-usb-uart
   - board: nice_nano_v2_flipped
     shield: tdh70_right
+    snippet: studio-rpc-usb-uart
   - board: nice_nano_v2_flipped
     shield: settings_reset
