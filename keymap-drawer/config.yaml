@@ -1,0 +1,4 @@
+# keymap-drawer configuration for the TDH70 ZMK keymap.
+draw_config:
+  # Show all six layers in a compact two-column layout.
+  n_columns: 2

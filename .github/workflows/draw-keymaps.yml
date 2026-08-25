@@ -1,0 +1,28 @@
+# Draw keymap diagrams using keymap-drawer.
+name: Draw ZMK keymaps
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/*.keymap"
+      - "config/*.dtsi"
+      - "config/**/*.dtsi"
+      - "config/**/*.overlay"
+      - "keymap-drawer/config.yaml"
+      - ".github/workflows/draw-keymaps.yml"
+
+jobs:
+  draw:
+    permissions:
+      contents: write
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@3a4ca7e060a54ba700d3e7b6a43cb0b9cec347d2
+    with:
+      keymap_patterns: "config/*.keymap"
+      config_path: "keymap-drawer/config.yaml"
+      west_config_path: "config"
+      output_folder: "keymap-drawer"
+      draw_args: "tdh70:'-d config/boards/shields/tdh70/tdh70.dtsi'"
+      install_version: "0.23.0"
+      destination: "commit"
+      commit_message: "keymap-drawer render"
