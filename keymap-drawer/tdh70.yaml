@@ -1,0 +1,428 @@
+layout: {zmk_keyboard: tdh70}
+layers:
+  default:
+  - ESC
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - '='
+  - TAB
+  - HOME
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - ']'
+  - '&td0'
+  - END
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHIFT}
+  - G
+  - H
+  - {t: J, h: RSHIFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RALT}
+  - {t: ;, h: RGUI}
+  - ''''
+  - \
+  - LCTRL
+  - LALT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - LEFT
+  - RIGHT
+  - DOWN
+  - UP
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - PG DN
+  - PG UP
+  - {t: function, h: toggle}
+  - function
+  - navigation
+  - SPACE
+  - {t: TAB, h: LSHIFT}
+  - RET
+  - BSPC
+  - DEL
+  - media
+  - '&key_repeat'
+  function:
+  - '&studio_unlock'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PSCRN
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - INS
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - CAPS
+  - F1
+  - F2
+  - F3
+  - F4
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: function, h: toggle}
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  navigation:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctl+Z
+  - Ctl+V
+  - Ctl+C
+  - Ctl+X
+  - Ctl+Y
+  - ''
+  - ''
+  - ''
+  - ''
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHIFT
+  - ''
+  - CAPS
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+Y
+  - ''
+  - ''
+  - ''
+  - ''
+  - INS
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  media:
+  - {t: BT, h: '0'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BT, h: '1'}
+  - ''
+  - ''
+  - ''
+  - BRI DN
+  - BRI UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BT, h: '2'}
+  - ''
+  - ''
+  - PREV
+  - VOL DN
+  - VOL UP
+  - NEXT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BT, h: '3'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - ''
+  - MUTE
+  - PP
+  - STOP
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  game:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Q
+  - W
+  - E
+  - R
+  - '6'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - A
+  - S
+  - D
+  - F
+  - '7'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - CAPS
+  - X
+  - C
+  - V
+  - Z
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - SPACE
+  - LALT
+  - {t: default, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: game, h: toggle}
+  azerty:
+  - ESC
+  - '`'
+  - {t: '&', s: '1'}
+  - {t: E, s: '2'}
+  - {t: '"', s: '3'}
+  - {t: '''', s: '4'}
+  - {t: (, s: '5'}
+  - {t: '-', s: '6'}
+  - {t: E, s: '7'}
+  - {t: _, s: '8'}
+  - {t: C, s: '9'}
+  - {t: A, s: '0'}
+  - {t: ), s: '-'}
+  - '='
+  - PG UP
+  - HOME
+  - A
+  - Z
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: ^, s: '"'}
+  - {t: $, s: '#'}
+  - PG DN
+  - END
+  - {t: Q, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHIFT}
+  - G
+  - H
+  - {t: J, h: RSHIFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RALT}
+  - {t: M, h: RGUI}
+  - {t: U, s: '%'}
+  - {t: '*', s: M}
+  - CAPS
+  - {t: '>', s: <}
+  - W
+  - X
+  - C
+  - V
+  - B
+  - LEFT
+  - RIGHT
+  - DOWN
+  - UP
+  - N
+  - {t: ',', s: '?'}
+  - {t: ;, s: .}
+  - {t: ':', s: /}
+  - {t: '!', s: /}
+  - ''
+  - ''
+  - {t: function, h: toggle}
+  - function
+  - navigation
+  - SPACE
+  - TAB
+  - RET
+  - BSPC
+  - DEL
+  - ''
+  - {t: azerty, h: toggle}
